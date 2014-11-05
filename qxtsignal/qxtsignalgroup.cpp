@@ -55,7 +55,8 @@ SignalGroup::SignalGroup(QObject *parent) :
 void SignalGroup::addSignal(QObject *sender, const char *signal)
 {
     Q_D(SignalGroup);
-    int signalId = sender->metaObject()->indexOfSignal(signal);
+    QByteArray normalized = QMetaObject::normalizedSignature(signal + 1);
+    int signalId = sender->metaObject()->indexOfSignal(normalized);
     if (signalId < 0)
     {
         qWarning("Qxt::SignalGroup::addSignal: no such signal %s", signal);
