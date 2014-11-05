@@ -61,8 +61,8 @@ bool SignalWaiter::wait(int msec, QEventLoop::ProcessEventsFlags flags)
 {
     Q_D(SignalWaiter);
     d->ready = false;
+    d->timeout = false;
     d->emitted = false;
-
     if (msec < -1 || msec == 0)
         return false;
 
