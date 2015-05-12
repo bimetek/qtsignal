@@ -1,5 +1,5 @@
 # Project include file for QtPods
 
-INCLUDEPATH += $$PWD/qtsignal
+INCLUDEPATH += $$PWD/src
 
 LIBS += -L../qtsignal -lqtsignal
