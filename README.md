@@ -1,4 +1,4 @@
-# QxtSignal
+# QtSignal
 
 Signal-related classes extracted from LibQxt, namespaced and modernised for Qt 4.7+.
 
@@ -16,4 +16,4 @@ Please report any incompatibilities.
 
 ## License
 
-QxtSignal is released under LGPL 2.1 and CPL 1.0 (same with LibQxt).
+QtSignal is released under LGPL 2.1.
